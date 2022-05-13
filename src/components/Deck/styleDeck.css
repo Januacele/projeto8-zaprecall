@@ -1,0 +1,23 @@
+
+.Deck{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.Deck img{
+    width: 100%;
+    height: 100%;
+    background-color: #FB6B6B;
+
+}
+
+.Deck h1 {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px; 
+    color: #FFFFFF;
+}

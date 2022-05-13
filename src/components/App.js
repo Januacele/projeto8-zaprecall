@@ -1,6 +1,5 @@
-import ReactDom from "react-dom";
 
-import Inicio from "./inicio/Inicio";
+import Inicio from "./TelaInicial/Inicio";
 
 export default function App (){
     return (
