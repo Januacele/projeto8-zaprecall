@@ -1,0 +1,47 @@
+.inicio{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: #FB6B6B;
+}
+
+.inicio img {
+    width: 136px;
+    height: 161px;
+}
+
+.inicio h1 {
+    font-family: "Righteous", cursive;
+    font-size: 36px;
+    color: white;
+  }
+
+.inicio button{
+    width: 246px;
+    height: 54px;
+    padding: 16px 22px;
+    background: #FFFFFF;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    text-align: center;
+    color: #D70900;
+}
+
+
+
+
+
+
+
+
+
