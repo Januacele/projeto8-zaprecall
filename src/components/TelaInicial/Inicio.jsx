@@ -1,26 +1,24 @@
 
-import React from 'react-dom';
-import Deck from '../Deck/Deck';
-import logo from '../../assets/Images/logo.png'
+import {useState} from 'react';
+import logo from '../../assets/Images/logo.png';
 import './styleInicio.css'
 
 
 export default function Inicio () {
 
-    const [clicked, setClicked] = React.useState(false);
-
+    const [clicked, setClicked] = useState(false); 
+    if (clicked){
         return (
-
             <div className='inicio'>
                 <img src= {logo} alt="ZapRecall" />
                 <h1> ZapRecall </h1>
-                <button onClick = {() => setClicked(true)}> Iniciar Recall! </button>
-                {!clicked ? (<Inicio />) : (<Deck />)}
-            </div>
-            
-        )
-} 
-   
+                <button onClick = {() => setClicked(false)}> Iniciar Recall! </button>               
+            </div>           
+       )
+    }
+
+    else return <></>
+}
         
 
 
