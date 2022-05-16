@@ -1,6 +1,5 @@
+const Data = [ 
 
-let Data = [ 
-    
     {front: 'O que é JSX?', back: 'Uma extensão de linguagem do JavaScript'},
     {front: 'O React é __', back: 'uma biblioteca JavaScript para construção de interfaces'},
     {front: 'Componentes devem iniciar com __', back: 'letra maiúscula'},

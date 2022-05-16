@@ -1,4 +1,4 @@
-.Cards .card {
+.Cards .painel {
     width: 300px;
     display: flex;
     justify-content: space-between;
@@ -8,9 +8,31 @@
     border-radius: 5px;
     margin: 25px 0px;
     padding: 23px 15px;
+    cursor: pointer;
     font-family: 'Recursive', cursive;
-}
-
-.Cards .card .closed {
+  }
+  
+  .Cards .painel.fechado {
     max-height: 65px;
   }
+  
+  .Cards .painel.aberto {
+    min-height: 130px;
+    display: block;
+    background-color: white;
+    position: relative;
+    cursor: default;
+  }
+  
+  .Cards .painel.aberto .icone {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer
+  }
+  
+  
+ 
+
+  
+  

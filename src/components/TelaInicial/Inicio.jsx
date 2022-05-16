@@ -1,27 +1,18 @@
 
-import {useState} from 'react';
+import React from 'react';
+
 import logo from '../../assets/Images/logo.png';
-import './styleInicio.css'
+import '../TelaInicial/styleInicio.css';
+
+export default function Inicio({changePage}) {
 
 
-export default function Inicio () {
-
-    const [clicked, setClicked] = useState(false); 
-    if (clicked){
         return (
-            <div className='inicio'>
-                <img src= {logo} alt="ZapRecall" />
-                <h1> ZapRecall </h1>
-                <button onClick = {() => setClicked(false)}> Iniciar Recall! </button>               
-            </div>           
-       )
-    }
-
-    else return <></>
+            <div className="Inicio">
+                <img src={logo} alt="ZapRecall" />
+                <h1>ZapRecall</h1>
+                <button type="button" onClick={changePage}>Iniciar Recall !</button>
+            </div>
+        )
+    
 }
-        
-
-
-
-
-
