@@ -47,19 +47,20 @@
 
 .DeckScreen main {
     margin: 5px 0px;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
   }
 
 
   .DeckScreen footer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     min-height: 70px;
     max-height: 100%;
     position: fixed;
+    right: 0;
     left: 0;
     bottom: 0;
     background: #FFFFFF;
@@ -67,6 +68,7 @@
     font-family: 'Recursive', sans-serif;
     font-weight: bold;
     font-size: 18px;
-    line-height: 22px;
     padding: 5px 0px 3px 0px;
   }
+
+ 
