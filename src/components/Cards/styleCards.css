@@ -12,11 +12,11 @@
     font-family: 'Recursive', cursive;
   }
   
-  .Cards .painel.fechado {
+.Cards .painel.fechado {
     max-height: 65px;
   }
   
-  .Cards .painel.aberto {
+.Cards .painel.aberto {
     min-height: 130px;
     display: block;
     background-color: #FFFFD4;
@@ -24,21 +24,21 @@
     cursor: default;
   }
   
-  .Cards .painel.aberto .icone {
+.Cards .painel.aberto .icone {
     position: absolute;
     bottom: 15px;
     right: 15px;
     cursor: pointer
   }
   
-  .Cards .botoes {
+.Cards .botoes {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
   }
   
-  .Cards .botoes * {
+.Cards .botoes * {
     width: 85px;
     height: 40px;
     border-radius: 4px;
@@ -49,20 +49,29 @@
     font-size: 12px;
   }
  
-  .Cards .botoes .erro {
+.Cards .botoes .erro {
     background-color: #FF3030;
   }
   
-  .Cards .botoes .duvida {
+.Cards .botoes .duvida {
     background-color: #FF922E;
   }
   
-  .Cards .botoes .acerto {
+.Cards .botoes .acerto {
     background-color: #2FBE34;
   }
   
-  .Cards .finalizado {
-    cursor: default;
-  }
-  
-  
+.Cards .finalizado p{
+    text-decoration: line-through;
+    color: #2FBE34
+}
+
+.Cards .finalizado .erro{
+    text-decoration: line-through;
+    color: #FF3030;
+}
+
+.Cards .finalizado .duvida{
+    text-decoration: line-through;
+    color: #FF922E;
+}

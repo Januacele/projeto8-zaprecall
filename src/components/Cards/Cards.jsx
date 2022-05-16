@@ -3,7 +3,7 @@ import "../../components/Cards/styleCards.css";
 import Data from "../../data/Data";
 import play from '../../assets/Images/Play-icon.png';
 import setinha from '../../assets/Images/setinha.png';
-
+import Icone from '../Icones/Icone';
 
 function Cards(props) {
 
@@ -67,8 +67,8 @@ function Cards(props) {
         if (etapa === 4) {
             return (
                 <div className="painel fechado finalizado">
-                    <p className={resultado}>Cards{indice}</p>
-                    {/*Colocar os ícones de forma dinamica */}
+                    <p className={resultado}>Pergunta{indice}</p>
+                    <Icone icone={resultado} />
                 </div>
             )
         }

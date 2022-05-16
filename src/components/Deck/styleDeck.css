@@ -1,15 +1,30 @@
 .DeckScreen{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
+.DeckScreen::-webkit-scrollbar {
+    display: none;
+  }
 
 .DeckScreen header{
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 50px 0px 58px 0px;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 36px;
+    color: white;
+    font-family: "Righteous";
+    padding: 10px;
 }
 
 .DeckScreen .logo{
@@ -30,3 +45,10 @@
     line-height: 45px;
 }
 
+.DeckScreen main {
+    margin: 5px 0px;
+    margin-bottom: 50px;
+  }
+
+
+ 

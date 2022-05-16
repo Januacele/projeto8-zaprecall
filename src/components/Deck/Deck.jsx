@@ -3,7 +3,8 @@ import "../Deck/styleDeck.css";
 import Data from "../../data/Data";
 import Cards from "../Cards/Cards";
 import logoPequeno from "../../assets/Images/logo-pequeno.png";
-
+import festinha from "../../assets/Images/party.png";
+import triste from "../../assets/Images/sad.png";
 
 export default function Deck () {
 
@@ -33,6 +34,8 @@ export default function Deck () {
     const [questoes, setQuestoes] = React.useState([])
     const [respostas, setRespostas] = React.useState([])
 
+  
+
     
 
     return (
@@ -45,6 +48,7 @@ export default function Deck () {
                 {montarFlashcards()}
             </main>
             <footer>
+              
             </footer>
         </div>
     )
