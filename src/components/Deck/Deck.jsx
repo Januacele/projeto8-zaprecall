@@ -3,8 +3,7 @@ import "../Deck/styleDeck.css";
 import Data from "../../data/Data";
 import Cards from "../Cards/Cards";
 import logoPequeno from "../../assets/Images/logo-pequeno.png";
-import festinha from "../../assets/Images/party.png";
-import triste from "../../assets/Images/sad.png";
+import Icone from "../Icones/Icone";
 
 export default function Deck () {
 
@@ -34,7 +33,37 @@ export default function Deck () {
     const [questoes, setQuestoes] = React.useState([])
     const [respostas, setRespostas] = React.useState([])
 
-  
+    const Footer = MostrarFooter ();
+
+    function MostrarFooter (){
+        let resultado = <></>
+
+        if (respostas.length === questoes.length && questoes.length >0){
+            if(!respostas.includes("erro")){
+                resultado = (
+                    <div className="resultado">
+                        <span> <Icone icone = "festinha"/> Parabéns! </span>
+                        <p>Você não esqueceu de nenhum flashcard!</p>
+                    </div>
+                )
+            } else {
+                resultado = (
+                    <div className="resultado">
+                        <span> <Icone icone = "triste"/> Putz! </span>
+                        <p>Ainda faltam alguns...Mas não desanime!</p>
+                    </div>
+                )
+            }
+
+            return (
+                <>
+                    {resultado}
+                    <p> {respostas.length} / {perguntas.length} CONCLUÍDOS </p>
+                    {respostas.map((resposta, index) => <Icone icone = {resposta} key ={index} />)}
+                </>
+            )
+        }
+    }
 
     
 
