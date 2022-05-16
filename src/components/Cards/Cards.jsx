@@ -16,7 +16,7 @@ function Cards(props) {
                     className="painel fechado"
                     onClick={() => setStatus({ ...Status, etapa: 2 })}
                 >
-                    <p>Cards {indice}</p>
+                    <p>Pergunta {indice}</p>
                     <img src={play} alt="play deck" />
                 </div>
             )

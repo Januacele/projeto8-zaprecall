@@ -19,7 +19,7 @@
   .Cards .painel.aberto {
     min-height: 130px;
     display: block;
-    background-color: white;
+    background-color: #FFFFD4;
     position: relative;
     cursor: default;
   }
@@ -31,8 +31,38 @@
     cursor: pointer
   }
   
+  .Cards .botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
   
+  .Cards .botoes * {
+    width: 85px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 2px 10px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Recursive', cursive;
+    font-size: 12px;
+  }
  
-
+  .Cards .botoes .erro {
+    background-color: #FF3030;
+  }
+  
+  .Cards .botoes .duvida {
+    background-color: #FF922E;
+  }
+  
+  .Cards .botoes .acerto {
+    background-color: #2FBE34;
+  }
+  
+  .Cards .finalizado {
+    cursor: default;
+  }
   
   
