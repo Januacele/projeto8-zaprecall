@@ -64,8 +64,7 @@ export default function Deck () {
             )
         }
     }
-
-    
+   
 
     return (
         <div className="DeckScreen">
@@ -77,7 +76,7 @@ export default function Deck () {
                 {montarFlashcards()}
             </main>
             <footer>
-              
+              {Footer}
             </footer>
         </div>
     )
